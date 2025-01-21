@@ -1,3 +1,22 @@
 # Demo HTML - Etiquetas
 
 Este proyecto es una demo utilizando las etiquetas HTML.
+
+![html logo](assets/html5_logo.png)
+
+## Sintaxis inicial
+
+~~~
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hola mundo</h1>
+</body>
+</html>
+~~~
+###
