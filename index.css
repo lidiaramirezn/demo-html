@@ -1,8 +1,8 @@
 body {
-  font-family: "Oswald", serif;
+  font-family: Arial, sans-serif;
 }
 
-h1 {
-  color: blue;
-  font-weight: 300;
+h1, h2, h3 {
+  font-family: "Oswald", serif;
+  color: teal;
 }

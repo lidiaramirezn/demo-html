@@ -2,8 +2,6 @@
 
 Este proyecto es una demo utilizando las etiquetas HTML.
 
-![html logo](assets/html5_logo.png)
-
 ## Sintaxis inicial
 
 ~~~
