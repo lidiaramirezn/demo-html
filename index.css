@@ -1,8 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
 h1, h2, h3 {
   font-family: "Oswald", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: teal;
+  color: white;
+  padding: 16px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+}
+
+main {
+  background-color: #abdcdc;
+  color: aliceblue;
+  padding: 100px 20px;
+}
+
+main h1 {
   color: teal;
+  margin-bottom: 16px;
+}
+
+main span {
+  background: linear-gradient(teal 50%, black 75%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main p {
+  font-size: 18px;
+}
+
+main div {
+  margin-top: 24px;
+}
+
+main a {
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  background-image: linear-gradient(90deg, #003434,teal);
+}
+
+main a:first-child {
+  margin-right: 16px;
+}
+
+section {
+  margin: 32px 24px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-bottom: 16px;
+  color: teal;
+}
+
+article {
+  margin-bottom: 24px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+article a {
+  color: blue;
+}
+
+article h3 {
+  color: teal;
+}
+
+aside {
+  margin: 32px 24px;
+  padding: 16px;
+  background: #f0f0f0;
+  border-left: 4px solid teal;
+}
+
+aside h2 {
+  color: teal;
+}
+
+form div {
+  margin-bottom: 16px;
+}
+
+input[type="text"], 
+input[type="email"],
+select, 
+button {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus, 
+textarea:focus, 
+select:focus {
+  outline: none;
+  border-color: #003434;
+  box-shadow: 0 0 4px rgba(94, 158, 160, 0.5)
+}
+
+input::placeholder {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+textarea {
+  padding: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #004c4c;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 24px;
+  background-color: #001c1c;
+  color: white;
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer a {
+  color: lightskyblue;
+}
+
+footer hr {
+  border: 0;
+  height: 0.5px;
+  background-color: #ccc;
+  margin: 16px 0;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

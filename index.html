@@ -20,8 +20,157 @@
 </head>
 <body>
   <!-- Comentario -->
-  <h1>Título principal</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet rerum magni magnam voluptate debitis quod totam et nulla dicta dolor earum reprehenderit, aperiam laboriosam adipisci maiores nisi veritatis corporis reiciendis.</p>
-  <h2>Subtítulo</h2>
+
+  <header>
+    <a href="/">
+      <img alt="Logo de la página" src="assets/logo.png" alt="" title="logo">
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <a href="#main">Inicio</a>
+        </li>
+        <li>
+          <a href="#about-us">Sobre nosotros</a>
+        </li>
+        <li>
+          <a href="#articles">Artículos</a>
+        </li>
+        <li>
+          <a href="#contact">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Bienvenido a <span>Soluciones digitales</span></h1>
+    <p>
+      Impulsamos la transformación de negocios a través de soluciones digitales personalizadas, innovadoras y de calidad
+    </p>
+    <div>
+      <a href="#about-us">
+        Conocenos más
+      </a>
+      <a href="#contact">
+        Contáctanos
+      </a>
+    </div>
+  </main>
+
+  <section id="about-us">
+    <h2>Acerca de nosotros</h2>
+    <p>
+      Somos un equipo dedicado a <strong>proporcionar soluciones innovadoras</strong>,
+      con el objetivo es ayudarte a <em>construir un futuro digital exitoso.</em>
+    </p>
+    <br>
+    <p>
+      Con más de 2 años en el mercado tecnológico, nos mantenemos muy enfocados en construir una reputación basada en la excelencia, la innovación y la confianza.
+    </p>
+
+    <img src="assets/team.jpeg" alt="" title="team">
+  </section>
+
+  <section id="articles">
+    <h2>Nuestros artículos destacados</h2>
+    <article>
+      <h3>Las soluciones digitales que necesita mi negocio</h3>
+      <p>Una empresa que no está en internet y/o redes sociales, no existe. Siguiendo esto, el primer consejo de los expertos es tener una página web como requisito indispensable.</p>
+      <a target="_blank" href="https://www.google.com/">Leer más...</a>
+    </article>
+    <article>
+      <h3>Aumenta tus ventas y mejorar tu productividad a partir de la digitalización</h3>
+      <p>
+        Descubre técnicas prácticas para aprovechar la integración de tecnologías en tus procesos y lograr impulsar el crecimiento de tu negocio.
+      </p>
+      <a href="assets/logo.png" download>Descargar manual</a>
+    </article>
+  </section>
+
+  <aside>
+    <h2>Publicidad</h2>
+    <p>¡Obtén un descuento en social media marketing!</p>
+  </aside>
+
+  <section id="contact">
+    <h2>Contáctanos</h2>
+    <form action="/enviar" method="POST">
+      <div>
+        <label for="name">Nombre:</label>
+        <input name="nombre" type="text" id="name" placeholder="Introduce tu nombre" maxlength="50" required pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+">
+      </div>
+
+      <div>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <!-- <div>
+        <label for="birth">Fecha de nacimiento:</label>
+        <input type="date" id="birth" name="birth">
+      </div>
+
+      <div>
+        <label for="meeting-time">Hora de la reunión:</label>
+        <input type="time" id="meeting-time" name="meeting-time">
+      </div>
+
+      <div>
+        <label for="amount">Monto:</label>
+        <input type="range" id="amount" name="amount" min="0" max="100" value="50" step="10">
+      </div> 
+
+      <div>
+        <label for="file-upload">Adjuntar archivo:</label>
+        <input type="file" id="file-upload" name="file-upload">
+      </div> -->
+
+      <div>
+        <label for="gender">Sexo:</label>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Masculino</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Femenino</label>
+      </div>
+
+      <div>
+        <label for="topic">Tema de consulta:</label>
+        <select name="topic" id="topic">
+          <option value="general">General</option>
+          <option value="support">Soporte</option>
+          <option value="bussiness">Negocios</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="message">Mensaje:</label>
+        <br>
+        <textarea name="message" id="message" rows="5" cols="50"></textarea>
+      </div>
+
+      <div>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Suscribirse al boletín</label>
+      </div>
+
+      <button type="submit">Enviar</button>
+      
+    </form>
+  </section>
+  
+  <footer>
+    <p>
+      Consultas, sugerencias y comentarios escribenos a nuestro correo:
+      <a href="mailto:lid_26@gmail.com">contacto@ejemplo.com</a>
+    </p>
+    <hr>
+    <div>
+      <p>&copy; 2025 - Soluciones digitales.
+      <p>Todos los derechos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
