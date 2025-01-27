@@ -23,6 +23,11 @@ label {
   font-weight: bold;
 }
 
+img {
+  margin-top: 16px;
+  width: 100%;
+}
+
 header {
   display: flex;
   justify-content: space-between;
