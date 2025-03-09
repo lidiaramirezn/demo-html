@@ -11,7 +11,8 @@
   <meta property="og:url" content="https://www.ejemplo.com" />
 
   <title>Demo HTML</title>
-  <link rel="stylesheet" href="index.css">  
+  <link rel="stylesheet" href="reset.css"> 
+  <link rel="stylesheet" href="index.css"> 
   <link rel="icon" href="/assets/logo.png" type="image/png">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,45 +22,45 @@
 <body>
   <!-- Comentario -->
 
-  <header>
+  <header class="header">
     <a href="/">
-      <img alt="Logo de la página" src="assets/logo.png" alt="" title="logo">
+      <img class="header__image" alt="Logo de la página" src="assets/logo.png" alt="" title="logo">
     </a>
     <nav>
-      <ul>
+      <ul class="nav__items">
         <li>
-          <a href="#main">Inicio</a>
+          <a class="nav__link" href="#main">Inicio</a>
         </li>
         <li>
-          <a href="#about-us">Sobre nosotros</a>
+          <a class="nav__link" href="#about-us">Sobre nosotros</a>
         </li>
         <li>
-          <a href="#articles">Artículos</a>
+          <a class="nav__link" href="#articles">Artículos</a>
         </li>
         <li>
-          <a href="#contact">Contacto</a>
+          <a class="nav__link" href="#contact">Contacto</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main id="main">
-    <h1>Bienvenido a <span>Soluciones digitales</span></h1>
-    <p>
+  <main id="main" class="main">
+    <h1 class="main__title">Bienvenido a <span>Soluciones digitales</span></h1>
+    <p class="main__paragraph">
       Impulsamos la transformación de negocios a través de soluciones digitales personalizadas, innovadoras y de calidad
     </p>
-    <div>
-      <a href="#about-us">
+    <div class="main__buttons">
+      <a class="main__button" href="#about-us">
         Conocenos más
       </a>
-      <a href="#contact">
+      <a class="main__button" href="#contact">
         Contáctanos
       </a>
     </div>
   </main>
 
-  <section id="about-us">
-    <h2>Acerca de nosotros</h2>
+  <section id="about-us" class="section about-us">
+    <h2 class="subtitle">Acerca de nosotros</h2>
     <p>
       Somos un equipo dedicado a <strong>proporcionar soluciones innovadoras</strong>,
       con el objetivo es ayudarte a <em>construir un futuro digital exitoso.</em>
@@ -69,18 +70,18 @@
       Con más de 2 años en el mercado tecnológico, nos mantenemos muy enfocados en construir una reputación basada en la excelencia, la innovación y la confianza.
     </p>
 
-    <img src="assets/team.jpeg" alt="" title="team">
+    <img class="about-us__image" src="assets/team.jpeg" alt="" title="team">
   </section>
 
-  <section id="articles">
-    <h2>Nuestros artículos destacados</h2>
+  <section id="articles" class="section">
+    <h2 class="subtitle">Nuestros artículos destacados</h2>
     <article>
-      <h3>Las soluciones digitales que necesita mi negocio</h3>
+      <h3 class="article__subtitle">Las soluciones digitales que necesita mi negocio</h3>
       <p>Una empresa que no está en internet y/o redes sociales, no existe. Siguiendo esto, el primer consejo de los expertos es tener una página web como requisito indispensable.</p>
       <a target="_blank" href="https://www.google.com/">Leer más...</a>
     </article>
     <article>
-      <h3>Aumenta tus ventas y mejorar tu productividad a partir de la digitalización</h3>
+      <h3 class="article__subtitle">Aumenta tus ventas y mejorar tu productividad a partir de la digitalización</h3>
       <p>
         Descubre técnicas prácticas para aprovechar la integración de tecnologías en tus procesos y lograr impulsar el crecimiento de tu negocio.
       </p>
@@ -88,12 +89,12 @@
     </article>
   </section>
 
-  <aside>
-    <h2>Publicidad</h2>
+  <aside class="aside">
+    <h2 class="subtitle">Publicidad</h2>
     <p>¡Obtén un descuento en social media marketing!</p>
   </aside>
 
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contáctanos</h2>
     <form action="/enviar" method="POST">
       <div>
@@ -161,7 +162,7 @@
     </form>
   </section>
   
-  <footer>
+  <footer class="footer">
     <p>
       Consultas, sugerencias y comentarios escribenos a nuestro correo:
       <a href="mailto:lid_26@gmail.com">contacto@ejemplo.com</a>
